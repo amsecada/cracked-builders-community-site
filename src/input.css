@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-gradient {
+    animation: gradient 15s ease infinite;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-110;
+  }
+
+  .hover-rotate {
+    @apply transition-transform duration-300 hover:rotate-12;
+  }
+
+  .hover-bounce {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+}
